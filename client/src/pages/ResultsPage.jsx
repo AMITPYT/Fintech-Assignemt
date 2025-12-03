@@ -244,7 +244,7 @@ export default function ResultsPage() {
               <p className="mt-3 opacity-90">{i === 0 ? "covered" : i === 1 ? "recommended" : "projected"}</p>
             </motion.div>
           ))}
-        </motion.div>
+        </motion.div> 
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

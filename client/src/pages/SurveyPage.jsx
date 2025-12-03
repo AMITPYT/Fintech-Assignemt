@@ -97,7 +97,6 @@ export default function SurveyPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 py-12 px-6">
       <div className="max-w-5xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4">
             Let's Build Your Wealth Plan
@@ -105,23 +104,17 @@ export default function SurveyPage() {
           <p className="text-xl text-gray-600">Answer a few questions. Get a personalized investment strategy in seconds.</p>
         </div>
 
-        {/* Form Card */}
         <form onSubmit={handleSubmit(onSubmit)} className="bg-white/90 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/50 p-10 md:p-14 space-y-12">
           
-          {/* Personal Info */}
           <div className="grid md:grid-cols-2 gap-8">
             <InputField icon={User} label="Full Name" name="name" placeholder="John Doe" />
             <InputField icon={Calendar} label="Your Age" name="age" type="number" placeholder="30" />
           </div>
-
-          {/* Financial Info */}
           <div className="grid md:grid-cols-3 gap-8">
             <InputField icon={Wallet} label="Monthly Income (₹)" name="monthlyIncome" type="number" placeholder="75,000" />
             <InputField icon={Wallet} label="Monthly Expenses (₹)" name="monthlyExpenses" type="number" placeholder="40,000" />
             <InputField icon={PiggyBank} label="Current Investments (₹)" name="currentInvestments" type="number" placeholder="5,00,000" />
           </div>
-
-          {/* Risk & Goals */}
           <div className="space-y-12">
             <RadioGroup
               icon={Shield}
@@ -155,8 +148,6 @@ export default function SurveyPage() {
               />
             </div>
           </div>
-
-          {/* Submit Button */}
           <button
             type="submit"
             disabled={isSubmitting}
